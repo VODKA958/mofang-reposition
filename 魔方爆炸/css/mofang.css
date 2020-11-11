@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.bigBox {
+    width: 300px;
+    height: 300px;
+    margin: 300px auto;
+    position: relative;
+    transform-style: preserve-3d;
+
+    transform: rotateX(-30deg) rotateY(30deg);
+    /* animation: bigBox-run 5s linear infinite; */
+}
+
+@keyframes bigBox-run {
+    0%{
+        transform: rotateX(-30deg) rotateY(30deg);
+    }
+    100%{
+        transform: rotateX(-390deg) rotateY(390deg);
+    }
+
+}
+
+
+.bigBox ul {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    transform-style: preserve-3d;
+
+    /* background: red; */
+}
+
+.bigBox ul li {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.top {
+    /* background: pink; */
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    /* background: green; */
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.left {
+    /* background: yellow; */
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.right {
+    /* background: skyblue; */
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.behind {
+    /* background: rgb(124, 102, 223); */
+    transform: translateZ(-50px);
+}
+
+.front {
+    /* background: rgb(248, 59, 191); */
+    transform: translateZ(50px);
+}
+
+/* ===========第一层样式 start============== */
+.u-1-1-1 {
+    transform:translateX(-110px) translateY(-110px) translateZ(-110px) ;
+    animation: run-1-1-1 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-2-1-1 {
+    transform:translateX(0px) translateY(-110px) translateZ(-110px) ;
+    animation: run-2-1-1 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-3-1-1 {
+    transform:translateX(110px) translateY(-110px) translateZ(-110px) ;
+    animation: run-3-1-1 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-1-1-2 {
+    transform:translateX(-110px) translateY(-110px) translateZ(0px) ;
+    animation: run-1-1-2 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-2-1-2 {
+    transform:translateX(0px) translateY(-110px) translateZ(0px) ;
+    animation: run-2-1-2 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-3-1-2 {
+    transform:translateX(110px) translateY(-110px) translateZ(0px) ;
+    animation: run-3-1-2 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-1-1-3 {
+    transform:translateX(-110px) translateY(-110px) translateZ(110px) ;
+    animation: run-1-1-3 1s linear 1;
+    animation-fill-mode: forwards;
+    /* animation: run-1-1-3 1s linear 1;
+    animation-fill-mode: forwards; */
+}
+
+.u-2-1-3 {
+    transform:translateX(0px) translateY(-110px) translateZ(110px) ;
+    animation: run-2-1-3 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-3-1-3 {
+    transform:translateX(110px) translateY(-110px) translateZ(110px) ;
+    animation: run-3-1-3 1s linear 1;
+    animation-fill-mode: forwards;
+}
+/* ===========第一层样式 end============== */
+
+/* ===========第二层样式 start============== */
+.u-1-2-1 {
+    transform:translateX(-110px) translateY(0px) translateZ(-110px) ;
+}
+
+.u-2-2-1 {
+    transform:translateX(0px) translateY(0px) translateZ(-110px) ;
+}
+
+.u-3-2-1 {
+    transform:translateX(110px) translateY(0px) translateZ(-110px) ;
+}
+
+.u-1-2-2 {
+    transform:translateX(-110px) translateY(0px) translateZ(0px) ;
+}
+
+.u-2-2-2 {
+    transform:translateX(0px) translateY(0px) translateZ(0px) ;
+}
+
+.u-3-2-2 {
+    transform:translateX(110px) translateY(0px) translateZ(0px) ;
+}
+
+.u-1-2-3 {
+    transform:translateX(-110px) translateY(0px) translateZ(110px) ;
+    animation: run-1-2-3 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-2-2-3 {
+    transform:translateX(0px) translateY(0px) translateZ(110px) ;
+    animation: run-2-2-3 1s linear 1;
+    animation-fill-mode: forwards;
+    /* animation: run-2-2-3 2s linear 1;
+    animation-fill-mode: forwards; */
+}
+
+.u-3-2-3 {
+    transform:translateX(110px) translateY(0px) translateZ(110px) ;
+    animation: run-3-2-3 2s linear 1;
+    animation-fill-mode: forwards;
+}
+/* ===========第二层样式 end============== */
+
+/* ===========第三层样式 start============== */
+.u-1-3-1 {
+    transform:translateX(-110px) translateY(110px) translateZ(-110px) ;
+}
+
+.u-2-3-1 {
+    transform:translateX(0px) translateY(110px) translateZ(-110px) ;
+}
+
+.u-3-3-1 {
+    transform:translateX(110px) translateY(110px) translateZ(-110px) ;
+}
+
+.u-1-3-2 {
+    transform:translateX(-110px) translateY(110px) translateZ(0px) ;
+}
+
+.u-2-3-2 {
+    transform:translateX(0px) translateY(110px) translateZ(0px) ;
+}
+
+.u-3-3-2 {
+    transform:translateX(110px) translateY(110px) translateZ(0px) ;
+}
+
+.u-1-3-3 {
+    transform:translateX(-110px) translateY(110px) translateZ(110px) ;
+    animation: run-1-3-3 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-2-3-3 {
+    transform:translateX(0px) translateY(110px) translateZ(110px) ;
+    animation: run-2-3-3 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.u-3-3-3 {
+    transform:translateX(110px) translateY(110px) translateZ(110px) ;
+    animation: run-3-3-3 2s linear 1;
+    animation-fill-mode: forwards;
+}
+/* ===========第三层样式 end============== */
